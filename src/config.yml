@@ -1,0 +1,8 @@
+console_error_message: "This Command Can Be Used by Players Only"
+permission_error: "&7[&5SE&7] &cYou Don't Have Sufficient Permission to execute this command"
+
+commands:
+  fly:
+   fly_enable: "&7[&5SE&7] &eFlight Enabled"
+   fly_disable: "&7[&5SE&7] &eFlight Disabled"
+

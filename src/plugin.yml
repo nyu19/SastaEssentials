@@ -1,0 +1,11 @@
+name: SastaEssentials
+version: 1.0
+author: NYU19
+main: me.nyu19.SastaEssentials.Main
+description: This Plugin Is a Sasta Essentials
+
+commands:
+  fly:
+    description: Toggles Flight
+  reload:
+    description: Reloads the Plugin

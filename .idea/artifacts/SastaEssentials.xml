@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SastaEssentials">
+    <output-path>$PROJECT_DIR$/out/artifacts/SastaEssentials</output-path>
+    <root id="archive" name="SastaEssentials.jar">
+      <element id="module-output" name="SastaEssentials" />
+    </root>
+  </artifact>
+</component>
