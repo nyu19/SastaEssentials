@@ -9,3 +9,5 @@ commands:
     description: Toggles Flight
   reload:
     description: Reloads the Plugin
+  heal:
+    description: heals the Player
