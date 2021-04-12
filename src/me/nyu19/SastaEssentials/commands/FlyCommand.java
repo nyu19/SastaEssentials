@@ -16,6 +16,7 @@ public class FlyCommand implements CommandExecutor {
     }
     public boolean onCommand(CommandSender sender, Command cmd, String label , String[] arg){
         if (!(sender instanceof Player)){
+            plugin.getLogger().info(plugin.getConfig().getString("console_error_message"));
             return true;
         }
         Player p = (Player) sender;
