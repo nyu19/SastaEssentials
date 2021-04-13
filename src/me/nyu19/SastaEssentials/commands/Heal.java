@@ -23,13 +23,13 @@ public class Heal implements CommandExecutor {
         }
         if (strings.length == 1 && p.hasPermission("SE.commands.heal.others")){
             Player target = Bukkit.getPlayerExact(strings[0]);
-            target.setHealthScale(20);
+            target.setHealth(target.getHealthScale());
             target.setFoodLevel(20);
             target.sendMessage(ChatUtils.chatColor("&eYou Have been healed By the Minecraft Gods."));
             return true;
         }
         else if (p.hasPermission("SE.commands.heal")) {
-            p.setHealthScale(20);
+            p.setHealth(p.getHealthScale());
             p.setFoodLevel(20);
             p.sendMessage(ChatUtils.chatColor("&eYou Have been healed By the Minecraft Gods."));
             return true;
