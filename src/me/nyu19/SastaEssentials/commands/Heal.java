@@ -7,8 +7,15 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 public class Heal implements CommandExecutor {
+    public void cleanTarget(Player target){
+        target.addPotionEffect(PotionEffectType.SATURATION.createEffect(60,2));
+        target.setHealth(target.getHealthScale());
+        target.setFoodLevel(20);
+    }
     private Main plugin;
     public Heal(Main plugin){
         this.plugin = plugin;
@@ -23,14 +30,12 @@ public class Heal implements CommandExecutor {
         }
         if (strings.length == 1 && p.hasPermission("SE.commands.heal.others")){
             Player target = Bukkit.getPlayerExact(strings[0]);
-            target.setHealth(target.getHealthScale());
-            target.setFoodLevel(20);
+            cleanTarget(target);
             target.sendMessage(ChatUtils.chatColor("&eYou Have been healed By the Minecraft Gods."));
             return true;
         }
         else if (p.hasPermission("SE.commands.heal")) {
-            p.setHealth(p.getHealthScale());
-            p.setFoodLevel(20);
+            cleanTarget(p);
             p.sendMessage(ChatUtils.chatColor("&eYou Have been healed By the Minecraft Gods."));
             return true;
         }
