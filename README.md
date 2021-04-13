@@ -6,3 +6,4 @@ Cloning a Very Popular Minecraft Plugin named as Essential without looking into 
 Current Commands:
   1. fly
   2. reload
+  3. heal
