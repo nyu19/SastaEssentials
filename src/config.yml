@@ -6,3 +6,8 @@ commands:
    fly_enable: "&7[&5SE&7] &eFlight Enabled"
    fly_disable: "&7[&5SE&7] &eFlight Disabled"
 
+Events:
+  first_join_message: '&a%player% &7 has Joined For The First Time!! &cWooHoo!'
+  first_join_sound:
+  join_message: '&7[&2&l+&7]&f %player%'
+  leave_message: '&7[&c&l-&7]&f %player%'

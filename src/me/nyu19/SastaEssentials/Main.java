@@ -1,5 +1,7 @@
 package me.nyu19.SastaEssentials;
 
+import me.nyu19.SastaEssentials.Listeners.JoinListener;
+import me.nyu19.SastaEssentials.Listeners.LeaveListener;
 import me.nyu19.SastaEssentials.commands.FlyCommand;
 import me.nyu19.SastaEssentials.commands.Heal;
 import me.nyu19.SastaEssentials.commands.Reload;
@@ -12,7 +14,9 @@ public class Main extends JavaPlugin {
         new FlyCommand(this);
         new Heal(this);
         new Reload(this);
-        getLogger().info("[Sasta Essentials]: Plugin Enabled Successfully.");
+        new JoinListener(this);
+        new LeaveListener(this);
+        getLogger().info("Plugin Enabled Successfully.");
     }
     public void onDisable(){
 
