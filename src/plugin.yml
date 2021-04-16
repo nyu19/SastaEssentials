@@ -11,3 +11,7 @@ commands:
     description: Reloads the Plugin
   heal:
     description: heals the Player
+  god:
+    aliases:
+      - goddess
+    description: Toggles God Mode

@@ -40,7 +40,7 @@ public class FlyCommand implements CommandExecutor {
                 }
             }
             else {
-                p.sendMessage(ChatUtils.chatColor(plugin.getConfig().getString("commands.permission_error")));
+                p.sendMessage(ChatUtils.chatColor(plugin.getConfig().getString("permission_error")));
             }
         }
         if (p.hasPermission("SE.commands.fly")){
@@ -58,7 +58,7 @@ public class FlyCommand implements CommandExecutor {
             }
         }
         else {
-            p.sendMessage(ChatUtils.chatColor(plugin.getConfig().getString("commands.permission_error")));
+            p.sendMessage(ChatUtils.chatColor(plugin.getConfig().getString("permission_error")));
         }
         return false;
     }
