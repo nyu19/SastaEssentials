@@ -15,3 +15,5 @@ commands:
     aliases:
       - goddess
     description: Toggles God Mode
+  flyspeed:
+    description: Sets player Fly Speed

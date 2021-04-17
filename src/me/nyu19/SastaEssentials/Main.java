@@ -12,6 +12,7 @@ public class Main extends JavaPlugin {
         new FlyCommand(this);
         new Heal(this);
         new God(this);
+        new FlySpeed(this);
 //        new Lockchest(this);
         new Reload(this);
         new JoinListener(this);
