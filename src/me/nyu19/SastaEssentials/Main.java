@@ -13,6 +13,7 @@ public class Main extends JavaPlugin {
         new Heal(this);
         new God(this);
         new FlySpeed(this);
+        new Hat(this);
 //        new Lockchest(this);
         new Reload(this);
         new JoinListener(this);

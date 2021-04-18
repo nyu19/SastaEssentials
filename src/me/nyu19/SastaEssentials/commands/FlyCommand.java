@@ -24,7 +24,7 @@ public class FlyCommand implements CommandExecutor {
             Player target = Bukkit.getPlayerExact(arg[0]);
 
             if (p.hasPermission("SE.commands.fly.others")){
-                if (target.isFlying()){
+                if (target.getAllowFlight()){
                     target.setAllowFlight(false);
                     target.setFlying(false);
                     p.sendMessage(ChatUtils.chatColor(plugin.getConfig().getString("commands.fly.fly_disable")));
@@ -44,7 +44,7 @@ public class FlyCommand implements CommandExecutor {
             }
         }
         if (p.hasPermission("SE.commands.fly")){
-            if (p.isFlying()){
+            if (p.getAllowFlight()){
                 p.setAllowFlight(false);
                 p.setFlying(false);
                 p.sendMessage(ChatUtils.chatColor(plugin.getConfig().getString("commands.fly.fly_disable")));
