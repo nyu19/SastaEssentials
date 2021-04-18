@@ -7,7 +7,7 @@ commands:
    fly_disable: "&7[&5SE&7] &eFlight Disabled"
   god:
     god_enable: "&7[&5SE&7] &eGod Mode Enabled"
-    god_diable: "&7[&5SE&7] &eGod Mode Disabled"
+    god_disable: "&7[&5SE&7] &eGod Mode Disabled"
 Events:
   first_join_message: '&a%player% &7 has Joined For The First Time!! &cWooHoo!'
   first_join_sound:
