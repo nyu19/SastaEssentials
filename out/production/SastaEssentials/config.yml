@@ -14,3 +14,10 @@ Events:
   join_message: '&7[&2&l+&7]&f %player%'
   leave_message: '&7[&c&l-&7]&f %player%'
 
+Auto_TNT_Ignite:
+  status: false
+  disabled_msg: "&cThis Feature is Currently turned OFF"
+Explosive_Projectile:
+  status: false
+  entity: SNOWBALL
+
